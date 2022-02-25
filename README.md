@@ -39,9 +39,14 @@ Then install juggler (deals with reconstruction)
 
 Set environmental variables needed to generated data (run reconstruction_benchmarks). You might want to add this to a your bashrc
  
-> export DETECTOR_PATH=$PWD/athena
-> export JUGGLER_DETECTOR=athena
-> export JUGGLER_INSTALL_PREFIX=$PWD/development
+#!/bin/bash                                                                     
+source /opt/detector/setup.sh
+export LD_LIBRARY_PATH=$PWD/development/lib:$LD_LIBRARY_PATH
+export PATH=$PWD/development/bin:$PATH
+export DETECTOR_PATH=$PWD/athena
+export JUGGLER_DETECTOR=athena
+export JUGGLER_INSTALL_PREFIX=$PWD/development
+
 
 #get reconstruction code and run (for example the full calo cluster benchmark)
 > git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
