@@ -4,7 +4,11 @@ and follow instructions
 Then: 
 
 > mkdir development
+
+
 > export LD_LIBRARY_PATH=$PWD/development/lib:$LD_LIBRARY_PATH
+
+
 > export PATH=$PWD/development/bin:$PATH
 
 Then get and install the detector (ATHENA):
