@@ -65,8 +65,14 @@ export JUGGLER_INSTALL_PREFIX=$PWD/development
 
 #get reconstruction code and run (for example the full calo cluster benchmark)
 > git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
+
+
 > cd reconstruction_benchmarks/
+
+
 > ./bin/get_calibrations                                      #You only need this once
+
+
 > bash benchmarks/clustering/full_cal_clusters.sh -p "electron" -n 100 --pmin 0.99 --pmax 1.01 -t test1
 
 The last command will use single-particle gun to generate 100 electrons with a momentum in range 0.99-1.01 GeV. 
