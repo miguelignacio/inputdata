@@ -28,10 +28,20 @@ Then get and install the detector (ATHENA):
 Thne install beamline: 
 
 > git clone https://eicweb.phy.anl.gov/EIC/detectors/ip6.git
+
+
 > cd ip6
+
+
 > mkdir build && cd build
+
+
 > cmake .. -DCMAKE_INSTALL_PREFIX=../../development
+
+
 > make install
+
+
 > cd ../..
 
 Then copy beamline compact files to detector
