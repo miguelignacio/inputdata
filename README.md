@@ -50,10 +50,20 @@ Then copy beamline compact files to detector
 Then install juggler (deals with reconstruction)
 
 > git clone https://eicweb.phy.anl.gov/EIC/juggler.git
+
+
 > cd juggler/
+
+
 > mkdir build && cd build
+
+
 > cmake .. -DCMAKE_INSTALL_PREFIX=../../development -DCMAKE_CXX_STANDARD=20
+
+
 > make install
+
+
 > cd ../..
 
 Set environmental variables needed to generated data (run reconstruction_benchmarks). You might want to add this to a your bashrc
