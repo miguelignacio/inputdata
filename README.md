@@ -88,7 +88,10 @@ export JUGGLER_INSTALL_PREFIX=$PWD/development
 
 
 #get reconstruction code and run (for example the full calo cluster benchmark)
-> git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks.git
+
+git clone https://eicweb.phy.anl.gov/EIC/benchmarks/reconstruction_benchmarks/-/tree/ai_codesign
+
+Note that the one above has a few changes we made that are not in the main branch of reconstruction_bechmarks. 
 
 
 > cd reconstruction_benchmarks/
