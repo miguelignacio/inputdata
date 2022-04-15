@@ -10,10 +10,19 @@ Then:
 Then get and install the detector (ATHENA):
 
 > git clone https://eicweb.phy.anl.gov/EIC/detectors/athena.git
+
 > cd athena
+
+
 > mkdir build && cd build
+
+
 > cmake .. -DCMAKE_INSTALL_PREFIX=../../development
+
+
 > make install
+
+
 > cd ../..
 
 Thne install beamline: 
